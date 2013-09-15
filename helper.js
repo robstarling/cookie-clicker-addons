@@ -32,7 +32,7 @@
       var log = (printer == undefined) ? logFn : printer;
       log("Now: "+p3sf(G.cookies)+" +"+p3sf(G.cookiesPs)+"/s (+"+
           p3sf(G.cookiesPs*60)+"/min, "+p3sf(G.cookiesPs*3600)+"/hr, "+
-          p3sf(G.cookiesPs*60)+"/day)");
+          p3sf(G.cookiesPs*86400)+"/day)");
       log("");
       var best=undefined;
       for(var i=0; i < G.ObjectsById.length; i++) {
