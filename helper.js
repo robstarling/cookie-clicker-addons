@@ -30,8 +30,9 @@
       var p3sf = this.p3sf;
       var dur = this.dur;
       var log = (printer == undefined) ? logFn : printer;
-      log("Current: "+p3sf(G.cookies)+" +"+p3sf(G.cookiesPs)+"/s (+"+
-          p3sf(G.cookiesPs/60)+"/min, "+p3sf(G.cookiesPs/3600)+"/hr)");
+      log("Now: "+p3sf(G.cookies)+" +"+p3sf(G.cookiesPs)+"/s (+"+
+          p3sf(G.cookiesPs*60)+"/min, "+p3sf(G.cookiesPs*3600)+"/hr, "+
+          p3sf(G.cookiesPs*60)+"/day)");
       log("");
       var best=undefined;
       for(var i=0; i < G.ObjectsById.length; i++) {
